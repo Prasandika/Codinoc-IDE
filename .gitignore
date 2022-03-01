@@ -1,0 +1,10 @@
+# Ignore Unwanted Directories
+
+.vscode/
+
+Binary/
+Server/bgo
+Server/bpg
+Server/dta
+
+# Ignore Unwanted Files

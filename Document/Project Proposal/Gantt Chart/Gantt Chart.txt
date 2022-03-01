@@ -1,0 +1,32 @@
+```
+1. Research about the Project
+2. Analysis
+  1. Requirements Analysis
+  2. Tools Analysis
+  3. User Experience Analysis
+3. Design
+  1. Project Structure Design
+  2. Server Structure Design
+  3. Database Design
+    1. Design Database for Site
+    2. Design Database for Users
+  4. User Interface Design
+    1. User Interface for Non Logged Area Development
+    3. User Interface for IDE Development
+    4. User Interface for Administrator Area Development
+4. Deployment
+  1. Development Server Setup
+    1. Server Language Setup
+    2. Server Database Setup
+5. Development
+  1. User Interface Development
+    1. User Interface for Non Logged Area Development
+    3. User Interface for IDE Development
+    4. User Interface for Administrator Area Development
+  2. Web Application Development
+  3. Desktop Application Developemnt
+6. Testing
+  1. Alpha Testing
+  2. Beta Testing
+  3. Correct Issues
+```

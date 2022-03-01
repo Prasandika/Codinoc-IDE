@@ -1,3 +1,6 @@
+> **Note:**\
+> This is not a Personal Project by me [las-nish](https://github.com/las-nish/)\
+
 # Developer Note for Project
 
 ## Project Changes
