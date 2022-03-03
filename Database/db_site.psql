@@ -91,10 +91,7 @@ CREATE TABLE schema_server.tb_security (
 
 CREATE TABLE schema_server.tb_password (
 	data_id BIGSERIAL PRIMARY KEY,
-	hashed_psw_part_01 VARCHAR(512) NOT NULL,
-	hashed_psw_part_02 VARCHAR(512) NOT NULL,
-	hashed_psw_part_03 VARCHAR(512) NOT NULL,
-	hashed_psw_part_04 VARCHAR(512) NOT NULL
+	hashed_psw VARCHAR(2048) NOT NULL
 );
 
 CREATE TABLE schema_server.tb_status (
