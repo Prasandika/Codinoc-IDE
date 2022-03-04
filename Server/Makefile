@@ -10,10 +10,3 @@ CODINOC_RUN:
 
 CODINOC_BUILD:
 	go build -o Server/bin/codinoc Server/cmd/codinoc.go
-
-# Commit to Github
-
-COMMIT:
-	git add .
-	git commit -S -m "$(VAR_CMT)"
-	git push -u origin main
