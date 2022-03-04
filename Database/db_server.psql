@@ -50,7 +50,13 @@ CREATE TABLE schema_team.tb_info (
 	date_of_birth DATE NOT NULL,
 	gender VARCHAR(8) NOT NULL,
 	mobile_number VARCHAR(32) NOT NULL,
-	home_address VARCHAR(2048) NOT NULL
+	home_address VARCHAR(2048) NOT NULL,
+);
+
+CREATE TABLE schema_team.tb_pride (
+	data_id SERIAL PRIMARY KEY,
+	is_pride BOOLEAN NOT NULL,
+	pride_type INT
 );
 
 CREATE TABLE schema_team.tb_security (
@@ -81,6 +87,7 @@ CREATE TABLE schema_team.tb_main (
 	member_id SERIAL PRIMARY KEY,
 	id_appearance INT NOT NULL,
 	id_info INT NOT NULL,
+	id_pride INT NOT NULL,
 	id_security INT NOT NULL,
 	id_password INT NOT NULL,
 	id_time INT NOT NULL,
@@ -88,6 +95,7 @@ CREATE TABLE schema_team.tb_main (
 
 	CONSTRAINT f_appearance FOREIGN KEY (id_appearance) REFERENCES schema_team.tb_appearance (data_id),
 	CONSTRAINT f_info FOREIGN KEY (id_info) REFERENCES schema_team.tb_info (data_id),
+	CONSTRAINT f_pride FOREIGN KEY (id_pride) REFERENCES schema_team.tb_pride (data_id),
 	CONSTRAINT f_security FOREIGN KEY (id_security) REFERENCES schema_team.tb_security (data_id),
 	CONSTRAINT f_password FOREIGN KEY (id_password) REFERENCES schema_team.tb_password (data_id),
 	CONSTRAINT f_time FOREIGN KEY (id_time) REFERENCES schema_team.tb_time (data_id),
