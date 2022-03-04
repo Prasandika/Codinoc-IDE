@@ -14,6 +14,8 @@
 | Software | JetBrains DataGrip | Changed | Visual Studio Code |
 | Software | JetBrains GoLand | Changed | Visual Studio Code |
 
+---
+
 ## Directory Structure
 
 **Directory structure in `/Server`**
@@ -28,6 +30,8 @@ cmd       -> GO file of the project
 dta       -> Database warehouse
 thm       -> Website complete theme
 ```
+
+---
 
 ## Required Technologies
 
@@ -56,22 +60,39 @@ thm       -> Website complete theme
 
 ### Web Frameworks
 
+---
+
 ## Setup Development Server
 
-### Setup Environment Variables
+### Directory Structure
 
-Add these content into the `.bashrc` file using `sudo nano .bashrc`
+**Directory Structure for Server**
 
-```bash
-# ---------------
-# Codinoc Project
-# ---------------
-
-export CODINOC_PTH_GO=/mnt/BE92EE7F92EE3B91/Codinoc\ Project/Server/bgo/bin
-export CODINOC_PTH_PG=/mnt/BE92EE7F92EE3B91/Codinoc\ Project/Server/bpg/bin
-
-export PATH=$PATH:$CODINOC_PTH_GO:$CODINOC_PTH_PG
 ```
+Server
+  |- adm : Administrator Directory
+  |- bgo : Go Language Binary Tarball Directory
+  |- bin : Web Site's bin Directory
+  |- bpg : PostgreSQL Binary Tarball Directory
+  |- cdn : Storage Directory
+  |- cmd : GO Files Directory
+  |- dta : Database Storage Directory
+  |- thm : Theme Directory
+  |- www : Site Directory
+```
+
+Just ignore `Server/bgo` directory, if you installed go compiler using package managers
+
+### Install GO Compiler
+
+[Follow this tutorial to install GO Language in any linux distro](https://golangdocs.com/install-go-linux) or [this one](https://linuxtect.com/how-to-install-go-golang-in-linux/)
+
+### Install PostgreSQL Database
+
+> Note:\
+> We use PostgreSQL 10.20 Linux Binary Tarball here and you can download it using [this link](https://sbp.enterprisedb.com/getfile.jsp?fileid=1257992)
+
+- After download, extract it on `/Server/bpg` directory
 
 ### Setup GO Language and Packages
 
