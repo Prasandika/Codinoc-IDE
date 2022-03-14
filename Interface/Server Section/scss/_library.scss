@@ -1,0 +1,5 @@
+// Convert Pixel to REM
+
+@function pxtorem($_size) {
+	@return $_size / $rem-base-font * 1rem;
+}
